@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Testmiljo_Administration</title>
+  <title>Leaflet Draw Example</title>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
@@ -42,8 +42,8 @@
     var url = URL.createObjectURL(blob);
 
     var xhr = new XMLHttpRequest();
-    xhr.open("PUT", "https://api.github.com/repos/YOUR_USERNAME/YOUR_REPOSITORY/contents/points.geojson", true);
-    xhr.setRequestHeader("Authorization", "token YOUR_GITHUB_TOKEN");
+    xhr.open("PUT", "https://api.github.com/repos/timothylevin/Testmiljo_Administration/contents/points.geojson", true);
+    xhr.setRequestHeader("Authorization", "token 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");
 
     xhr.onload = function() {
       if (xhr.status === 200) {
@@ -65,4 +65,3 @@
 
 </body>
 </html>
-
